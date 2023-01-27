@@ -20,7 +20,7 @@ const CreatePost = () => {
       {setLoading(true);
 
       try {
-        const response = await fetch('http://localhost:8000/api/v1/post',{
+        const response = await fetch('https://neurograph.onrender.com/api/v1/post',{
           method:'POST',
           headers:{
             'Content-Type' : 'application/json',
@@ -48,7 +48,7 @@ const CreatePost = () => {
     if(form.prompt){
       try {
         setGenerating(true);
-        const response = await fetch('http://localhost:8000/api/v1/app',{
+        const response = await fetch('https://neurograph.onrender.com/api/v1/app',{
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json',
